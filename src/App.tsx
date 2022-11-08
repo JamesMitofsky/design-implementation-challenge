@@ -7,7 +7,7 @@ const App = () => {
   return (
     <Box sx={{ backgroundColor: "primary.main" }}>
       <NavBar />
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{ mt: 2, mb: 3 }}>
         <PurchasePage />
       </Container>
     </Box>
