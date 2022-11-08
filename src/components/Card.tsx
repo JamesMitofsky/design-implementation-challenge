@@ -1,12 +1,17 @@
 import { NFTStructure } from "../types/NFTObjectType";
-import { Card, CardContent } from "@mui/material";
+import { Card as MUICard, CardContent, CardMedia } from "@mui/material";
+import { Image } from "mui-image";
 
-const Cards = ({ name }: NFTStructure) => {
+// maxwidth: 225px
+
+const Card = (props: NFTStructure) => {
+  console.log(props.thumbnail);
   return (
-    <Card>
-      <CardContent>{name}</CardContent>
-    </Card>
+    <MUICard sx={{ minWidth: 225, maxWidth: 225, height: 400 }}>
+      <Image src={props.thumbnail} alt="Preview of NFT for sale" height={200} />
+      <CardContent>{props.name}</CardContent>
+    </MUICard>
   );
 };
 
-export default Cards;
+export default Card;
