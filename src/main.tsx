@@ -16,14 +16,15 @@ let theme = createTheme({
       fontWeight: 700,
     },
     subtitle1: {
-      fontSize: "1.1rem",
+      fontSize: ".8rem",
       fontWeight: 100,
-      color: "grey",
     },
   },
   palette: {
     primary: {
       main: "#18191d",
+      light: "#2d2d2d",
+      dark: "#66676b",
     },
     background: {
       default: "#18191d",

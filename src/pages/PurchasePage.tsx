@@ -1,4 +1,5 @@
 import Cards from "../components/Cards";
+import Divider from "../components/Divider";
 import PageTitle from "../components/PageTitle";
 
 const PurchasePage = () => {
@@ -6,9 +7,10 @@ const PurchasePage = () => {
     <>
       <PageTitle
         title="Explore"
-        subtitle="Explore more than 100k of amazing NFT's on Kalao marketplace
-and filters them at your convenience."
+        subtitle="Explore more than 100k of amazing NFT's on the marketplace
+and filter them at your convenience."
       />
+      <Divider />
       <Cards />
     </>
   );

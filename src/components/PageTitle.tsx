@@ -13,12 +13,15 @@ const PageTitle = ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        textAlign: "center",
+        maxWidth: 600,
+        margin: "auto",
       }}
     >
       <Typography variant="h1" gutterBottom>
         {title}
       </Typography>
-      <Typography variant="subtitle1" gutterBottom>
+      <Typography color="primary.dark" variant="subtitle1" gutterBottom>
         {subtitle}
       </Typography>
     </Box>
