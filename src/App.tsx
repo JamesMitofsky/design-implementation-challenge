@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 
 const App = () => {
   return (
-    <Box sx={{ backgroundColor: "primary.main" }}>
+    <Box sx={{ flex: 1, backgroundColor: "primary.main" }}>
       <NavBar />
       <Container maxWidth="xl" sx={{ mt: 2, mb: 3 }}>
         <PurchasePage />

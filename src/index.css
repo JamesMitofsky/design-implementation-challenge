@@ -1,8 +1,14 @@
-html,
+html {
+  height: 100%;
+  display: flex;
+}
+
 body,
 #root {
   /* have root element take up full height */
-  min-height: 100%;
+  width: 100%;
   margin: 0;
   display: flex;
+  flex-direction: column;
+  flex: 1;
 }
