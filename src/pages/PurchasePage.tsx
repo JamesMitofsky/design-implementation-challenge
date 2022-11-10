@@ -1,5 +1,4 @@
 import Cards from "../components/Cards";
-import Divider from "../components/Divider";
 import PageTitle from "../components/PageTitle";
 
 const PurchasePage = () => {
@@ -10,7 +9,7 @@ const PurchasePage = () => {
         subtitle="Explore more than 100k of amazing NFT's on the marketplace
 and filter them at your convenience."
       />
-      <Divider />
+
       <Cards />
     </>
   );
