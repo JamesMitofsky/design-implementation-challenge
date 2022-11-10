@@ -12,19 +12,20 @@ let theme = createTheme({
       fontFamily: "'Poppins', sans-serif",
     },
     h1: {
-      fontSize: "1.7rem",
-      fontWeight: 500,
+      fontSize: "1.8rem",
+      fontWeight: 700,
     },
     subtitle1: {
       fontSize: ".6rem",
       fontWeight: 100,
+      color: "#6c6d6f",
     },
   },
   palette: {
     primary: {
       main: "#18191d",
       light: "#2d2d2d",
-      dark: "#66676b",
+      dark: "#6c6d6f",
     },
     background: {
       default: "#18191d",
