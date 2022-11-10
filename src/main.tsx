@@ -3,11 +3,32 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import "@fontsource/poppins";
 
 let theme = createTheme({
+  typography: {
+    allVariants: {
+      color: "#ffffff",
+      fontFamily: "'Poppins', sans-serif",
+    },
+    h1: {
+      fontSize: "1.7rem",
+      fontWeight: 500,
+    },
+    subtitle1: {
+      fontSize: ".6rem",
+      fontWeight: 100,
+    },
+  },
   palette: {
     primary: {
       main: "#18191d",
+      light: "#2d2d2d",
+      dark: "#66676b",
+    },
+    background: {
+      default: "#18191d",
+      paper: "#18191d",
     },
   },
 });
@@ -19,5 +40,3 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     </ThemeProvider>
   </React.StrictMode>
 );
-
-// #18191d
