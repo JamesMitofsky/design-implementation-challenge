@@ -14,8 +14,10 @@ const PageTitle = ({
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        maxWidth: 600,
+        maxWidth: 300,
         margin: "auto",
+        mt: 5,
+        mb: 5,
       }}
     >
       <Typography variant="h1" gutterBottom>

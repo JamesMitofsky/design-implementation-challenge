@@ -12,11 +12,11 @@ let theme = createTheme({
       fontFamily: "'Poppins', sans-serif",
     },
     h1: {
-      fontSize: "2.5rem",
-      fontWeight: 700,
+      fontSize: "1.7rem",
+      fontWeight: 500,
     },
     subtitle1: {
-      fontSize: ".8rem",
+      fontSize: ".6rem",
       fontWeight: 100,
     },
   },
