@@ -12,7 +12,7 @@ const NavBar = () => {
       <AppBar color="inherit" position="static" elevation={0}>
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
-            <Image src={Logo} alt="logo" width={30} />
+            <Image src={Logo} alt="logo" width={20} />
           </Box>
           <ImageIcon profileImage={UserImage} />
         </Toolbar>
