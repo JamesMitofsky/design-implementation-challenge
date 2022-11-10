@@ -9,13 +9,16 @@ const Card = (props: NFTStructure) => {
   return (
     <MUICard
       sx={{
-        minWidth: 225,
-        maxWidth: 225,
-        height: 400,
+        width: "150px",
+        height: "300px",
         borderRadius: 3,
       }}
     >
-      <Image src={props.thumbnail} alt="Preview of NFT for sale" height={300} />
+      <Image
+        src={props.thumbnail}
+        alt="Preview of NFT for sale"
+        height={"70%"}
+      />
 
       <CardText {...props} />
     </MUICard>
