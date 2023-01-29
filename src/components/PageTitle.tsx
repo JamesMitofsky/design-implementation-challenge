@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { grey } from "@mui/material/colors";
 
 const PageTitle = ({
   title,
@@ -14,10 +15,11 @@ const PageTitle = ({
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        maxWidth: 300,
-        margin: "auto",
+        width: "100%",
         mt: 4,
         mb: 5,
+        borderBottom: 1,
+        borderColor: grey[900],
       }}
     >
       <Typography variant="h1" sx={{ mb: 2 }}>
