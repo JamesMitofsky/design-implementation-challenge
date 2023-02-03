@@ -32,6 +32,14 @@ const MyComponent = () => {
 };
 ```
 
+### Prefix component folders with an underscores
+
+✅ Do
+
+```
+./components/\_groupName/ComponentName.tsx
+```
+
 ## Technical Details
 
 ### Using Material UI
@@ -42,3 +50,7 @@ The [AppBar component](https://mui.com/material-ui/api/app-bar/) can receive any
 
 Paticipating in this challenge, it was necessary to call an API and represent this exact Figma mockup:
 ![image](https://user-images.githubusercontent.com/12516538/201192230-8b66f9f7-26d3-4556-88a5-b03b9572431c.png)
+
+```
+
+```
