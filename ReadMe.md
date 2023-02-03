@@ -12,6 +12,24 @@ npm i && npm run dev
 
 ## Code Guidelines
 
+### Prefer short circuit evaluation
+
+This is done to avoid unnecessary nesting and improve readability. Read more about cyclomatic complexity [here](https://en.wikipedia.org/wiki/Cyclomatic_complexity).
+
+✅ Do
+
+```js
+if (!isAuthenticated) return;
+```
+
+❌ Don't
+
+```js
+if (isAuthenticated) {
+  // do something
+}
+```
+
 ### Prefer functional components over class components
 
 ### Prefer regular function delcarations over arrow functions

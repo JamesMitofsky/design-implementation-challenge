@@ -16,6 +16,10 @@ export default function CardGroup() {
       // assign response to react state
       setNfts(allNFTs);
     };
+
+    // quit effect if there are already NFTs
+    if (nfts.length > 0) return;
+
     fetchNFTs();
   }, []);
 
