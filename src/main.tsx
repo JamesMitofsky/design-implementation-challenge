@@ -4,6 +4,7 @@ import App from "./App";
 import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "@fontsource/poppins";
+import { grey } from "@mui/material/colors";
 
 let theme = createTheme({
   typography: {
@@ -18,14 +19,16 @@ let theme = createTheme({
     subtitle1: {
       fontSize: ".6rem",
       fontWeight: 100,
-      color: "#6c6d6f",
+      color: grey[700],
     },
   },
   palette: {
     primary: {
       main: "#18191d",
-      light: "#2d2d2d",
-      dark: "#6c6d6f",
+    },
+    secondary: {
+      main: grey[900],
+      light: grey[800],
     },
     background: {
       default: "#18191d",

@@ -14,7 +14,8 @@ export default function NavBar() {
       elevation={0}
       sx={{
         borderBottom: 1,
-        borderColor: grey[900],
+        borderTop: 1,
+        borderColor: "secondary.main",
       }}
     >
       <Toolbar>

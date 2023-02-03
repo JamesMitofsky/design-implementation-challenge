@@ -26,6 +26,7 @@ export default function CardGroup() {
         justifyContent: "center",
         flexWrap: "wrap",
         gap: 1.7,
+        mt: 4,
       }}
     >
       {nfts.map((nft) => {
