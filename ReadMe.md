@@ -32,7 +32,25 @@ if (isAuthenticated) {
 
 ### Prefer functional components over class components
 
-### Prefer regular function delcarations over arrow functions
+✅ Do
+
+```js
+export default function MyComponent() {
+  return <>lorem ipsum</>;
+}
+```
+
+❌ Don't
+
+```js
+class MyComponent extends React.Component {
+  render() {
+    return <>lorem ipsum</>;
+  }
+}
+```
+
+### Prefer traditional delcarations over arrow functions
 
 ✅ Do
 
@@ -50,7 +68,7 @@ const MyComponent = () => {
 };
 ```
 
-### Prefix component folders with an underscores
+### Prefix component folders with underscores
 
 ✅ Do
 
