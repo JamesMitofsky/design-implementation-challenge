@@ -14,9 +14,8 @@ export default function PageTitle({ title, subtitle }: Props) {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        width: "100%",
-        mt: 4,
-        mb: 5,
+        gap: 2,
+        p: 4,
         borderBottom: 1,
         borderColor: grey[900],
       }}

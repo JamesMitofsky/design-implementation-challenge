@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Box sx={{ flex: 1, backgroundColor: "primary.main" }}>
       <NavBar />
-      <Container maxWidth="xl" sx={{ mt: 2, mb: 3 }}>
+      <Container maxWidth="xl" sx={{ mb: 3 }}>
         <PurchasePage />
       </Container>
     </Box>
