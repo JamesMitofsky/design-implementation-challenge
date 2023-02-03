@@ -3,7 +3,7 @@ import { Container } from "@mui/system";
 import PurchasePage from "./pages/PurchasePage";
 import { Box } from "@mui/material";
 
-const App = () => {
+export default function App() {
   return (
     <Box sx={{ flex: 1, backgroundColor: "primary.main" }}>
       <NavBar />
@@ -12,6 +12,4 @@ const App = () => {
       </Container>
     </Box>
   );
-};
-
-export default App;
+}

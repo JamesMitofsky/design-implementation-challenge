@@ -1,11 +1,11 @@
-import { NFTStructure } from "../types/NFTObjectType";
+import { NFTStructure } from "../../types/NFTObjectType";
 import { Card as MUICard } from "@mui/material";
 import { Image } from "mui-image";
 import CardText from "./CardText";
 
 // maxwidth: 225px
 
-const Card = (props: NFTStructure) => {
+export default function PrimaryCard(props: NFTStructure) {
   return (
     <MUICard
       sx={{
@@ -23,6 +23,4 @@ const Card = (props: NFTStructure) => {
       <CardText {...props} />
     </MUICard>
   );
-};
-
-export default Card;
+}

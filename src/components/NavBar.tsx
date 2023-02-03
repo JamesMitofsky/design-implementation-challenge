@@ -6,7 +6,7 @@ import UserImage from "../assets/user.png";
 import { Box } from "@mui/system";
 import { grey } from "@mui/material/colors";
 
-const NavBar = () => {
+export default function NavBar() {
   return (
     <AppBar
       color="inherit"
@@ -25,5 +25,4 @@ const NavBar = () => {
       </Toolbar>
     </AppBar>
   );
-};
-export default NavBar;
+}

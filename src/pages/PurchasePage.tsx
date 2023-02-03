@@ -1,7 +1,7 @@
-import Cards from "../components/Cards";
+import Cards from "../components/_cards/CardGroup";
 import PageTitle from "../components/PageTitle";
 
-const PurchasePage = () => {
+export default function PurchasePage() {
   return (
     <>
       <PageTitle
@@ -13,5 +13,4 @@ and filter them at your convenience."
       <Cards />
     </>
   );
-};
-export default PurchasePage;
+}

@@ -1,10 +1,10 @@
-import { returnAllNFTs } from "../functions/fetchNFTs";
+import { returnAllNFTs } from "../../functions/fetchNFTs";
 import { useState, useEffect } from "react";
-import { NFTStructure } from "../types/NFTObjectType";
-import Card from "./Card";
+import { NFTStructure } from "../../types/NFTObjectType";
+import Card from "./PrimaryCard";
 import { Box } from "@mui/system";
 
-const Cards = () => {
+export default function CardGroup() {
   // react state to hold incoming NFTs
   const [nfts, setNfts] = useState<NFTStructure[]>([]);
 
@@ -34,6 +34,4 @@ const Cards = () => {
       })}
     </Box>
   );
-};
-
-export default Cards;
+}

@@ -1,9 +1,8 @@
-import { NFTStructure } from "../types/NFTObjectType";
+import { NFTStructure } from "../../types/NFTObjectType";
 import { CardContent, Typography } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2";
 
-const CardText = (props: NFTStructure) => {
-  console.log(props);
+export default function CardText(props: NFTStructure) {
   return (
     <CardContent>
       <Grid2 container>
@@ -26,5 +25,4 @@ const CardText = (props: NFTStructure) => {
       </Grid2>
     </CardContent>
   );
-};
-export default CardText;
+}

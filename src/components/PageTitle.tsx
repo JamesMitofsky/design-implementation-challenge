@@ -1,13 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 
-const PageTitle = ({
-  title,
-  subtitle,
-}: {
+interface Props {
   title: string;
   subtitle: string;
-}) => {
+}
+
+export default function PageTitle({ title, subtitle }: Props) {
   return (
     <Box
       sx={{
@@ -28,6 +27,4 @@ const PageTitle = ({
       <Typography variant="subtitle1">{subtitle}</Typography>
     </Box>
   );
-};
-
-export default PageTitle;
+}
