@@ -13,11 +13,11 @@ let theme = createTheme({
       fontFamily: "'Poppins', sans-serif",
     },
     h1: {
-      fontSize: "1.8rem",
+      fontSize: "2.2rem",
       fontWeight: 700,
     },
     subtitle1: {
-      fontSize: ".6rem",
+      fontSize: ".8rem",
       fontWeight: 100,
       color: grey[700],
     },
@@ -25,6 +25,7 @@ let theme = createTheme({
   palette: {
     primary: {
       main: "#18191d",
+      light: "hsl(0deg 0% 14% / 61%)",
     },
     secondary: {
       main: grey[900],

@@ -6,7 +6,7 @@ export interface NFTStructure {
   balance: string;
   collection: {
     address: string;
-    kind: string;
+    kind: "erc1155" | "erc721";
     name: string;
     certified: boolean;
     avatar: string;

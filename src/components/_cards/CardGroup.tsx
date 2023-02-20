@@ -1,26 +1,29 @@
 import { returnAllNFTs } from "../../functions/fetchNFTs";
 import { useState, useEffect } from "react";
 import { NFTStructure } from "../../types/NFTObjectType";
-import Card from "./PrimaryCard";
+import Card from "./Card";
 import { Box } from "@mui/system";
 
 export default function CardGroup() {
   // react state to hold incoming NFTs
   const [nfts, setNfts] = useState<NFTStructure[]>([]);
 
-  // use effect to avoid infinitely calling server
   useEffect(() => {
+    // inspired by this: https://stackoverflow.com/a/66071205/5395435
+    let active = true;
+    fetchNFTs();
+    return () => {
+      active = false;
+    };
+
     // create internal async function to await server response
-    const fetchNFTs = async () => {
+    async function fetchNFTs() {
+      if (!active) return;
+
       const allNFTs = await returnAllNFTs();
       // assign response to react state
       setNfts(allNFTs);
-    };
-
-    // quit effect if there are already NFTs
-    if (nfts.length > 0) return;
-
-    fetchNFTs();
+    }
   }, []);
 
   return (
