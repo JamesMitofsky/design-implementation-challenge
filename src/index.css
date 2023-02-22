@@ -11,4 +11,5 @@ body,
   display: flex;
   flex-direction: column;
   flex: 1;
+  cursor: url("custom-cursor.svg"), auto;
 }
