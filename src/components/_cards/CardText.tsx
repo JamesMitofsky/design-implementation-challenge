@@ -1,8 +1,9 @@
 import { NFTStructure } from "../../types/NFTObjectType";
-import { CardContent, Typography } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2";
+import { CardContent, Typography, Box } from "@mui/material";
 
-export default function CardText({ name, sale, collection }: NFTStructure) {
+type Props = Pick<NFTStructure, "name" | "sale" | "collection" | "offer">;
+
+export default function CardText({ name, sale, collection, offer }: Props) {
   const cardTypeDependantColor =
     collection.kind === "erc1155" ? "#44474d" : "secondary.main";
 
@@ -17,20 +18,42 @@ export default function CardText({ name, sale, collection }: NFTStructure) {
         borderColor: cardTypeDependantColor,
       }}
     >
-      <Grid2 container height="100%">
-        <Grid2 xs={12}>
-          <Typography variant="cardTitle">{name}</Typography>
-        </Grid2>
-        <Grid2 xs={6}>
+      <Box
+        sx={{
+          height: "100%",
+          width: "100%",
+          display: "grid",
+          gridTemplateAreas: `"title title"
+                              "price bestOffer"`,
+          gridTemplateRows: "1fr min-content",
+        }}
+      >
+        <Typography variant="cardTitle" sx={{ gridArea: "title" }}>
+          {name}
+        </Typography>
+
+        <Box sx={{ gridArea: "price" }}>
           <Typography variant="cardSubtitle">Price</Typography>
           <Typography sx={{ fontSize: 10 }}>
             {sale?.unitary_price_float.toFixed(1)}
           </Typography>
-        </Grid2>
-        <Grid2 xs={6}>
-          <Typography variant="cardSubtitle">Best Offer</Typography>
-        </Grid2>
-      </Grid2>
+        </Box>
+        {offer && (
+          <Box
+            sx={{
+              gridArea: "bestOffer",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+            }}
+          >
+            <Typography variant="cardSubtitle">Best Offer</Typography>
+            <Typography sx={{ fontSize: 10 }}>
+              {offer?.unitary_price_float.toFixed(1)}
+            </Typography>
+          </Box>
+        )}
+      </Box>
     </CardContent>
   );
 }
