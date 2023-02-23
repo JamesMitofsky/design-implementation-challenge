@@ -17,22 +17,18 @@ export default function CardText({ name, sale, collection }: NFTStructure) {
         borderColor: cardTypeDependantColor,
       }}
     >
-      <Grid2 container>
+      <Grid2 container height="100%">
         <Grid2 xs={12}>
-          <Typography sx={{ fontSize: 10 }} component="h2">
-            {name}
-          </Typography>
+          <Typography variant="cardTitle">{name}</Typography>
         </Grid2>
         <Grid2 xs={6}>
-          <Typography variant="subtitle1" component="div">
-            Price
-          </Typography>
+          <Typography variant="cardSubtitle">Price</Typography>
           <Typography sx={{ fontSize: 10 }}>
             {sale?.unitary_price_float.toFixed(1)}
           </Typography>
         </Grid2>
         <Grid2 xs={6}>
-          <Typography variant="subtitle1">Best Offer</Typography>
+          <Typography variant="cardSubtitle">Best Offer</Typography>
         </Grid2>
       </Grid2>
     </CardContent>
