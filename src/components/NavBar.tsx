@@ -20,7 +20,7 @@ export default function NavBar() {
     >
       <Toolbar>
         <Box sx={{ flexGrow: 1 }}>
-          <Image src={Logo} alt="logo" width={20} />
+          <Image src={Logo} alt="logo" width={20} duration={100} />
         </Box>
         <AvatarImage imageURL={UserImage} />
       </Toolbar>

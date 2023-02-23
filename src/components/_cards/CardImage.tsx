@@ -36,7 +36,7 @@ export default function CardImage({
         zIndex: 1,
       }}
     >
-      <Image src={thumbnail} alt={alt} height="inherit" duration={500} />
+      <Image src={thumbnail} alt={alt} height="inherit" duration={100} />
     </Box>
   );
 }
