@@ -3,15 +3,17 @@ import { useState, useEffect, useRef } from "react";
 import { NFTStructure } from "../../types/NFTObjectType";
 import Card from "./Card";
 import { Box } from "@mui/system";
+import CardSkeleton from "./LoadingSkeleton";
+import returnArrayOfOneComponent from "../../functions/returnArrayOfOneComponent";
 
 export default function CardGroup() {
   // react state to hold incoming NFTs
   const [nfts, setNfts] = useState<NFTStructure[]>([]);
 
-  const fetchCompleted = useRef(false);
+  const fetchBegun = useRef(false);
   useEffect(() => {
-    if (fetchCompleted.current) return;
-    fetchCompleted.current = true;
+    if (fetchBegun.current) return;
+    fetchBegun.current = true;
     fetchNFTs();
 
     // create internal async function to await server response
@@ -20,6 +22,8 @@ export default function CardGroup() {
       setNfts(allNFTs);
     }
   }, []);
+
+  const SkeletonComponents = returnArrayOfOneComponent(10, <CardSkeleton />);
 
   return (
     <Box
@@ -31,9 +35,9 @@ export default function CardGroup() {
         mt: 4,
       }}
     >
+      {nfts.length === 0 && SkeletonComponents.map((skeleton) => skeleton)}
       {nfts.map((nft) => {
-        if (!nft) return null;
-        return <Card key={nft.asset_id} {...nft} />;
+        return <Card key={nft.asset_id} nftData={nft} />;
       })}
     </Box>
   );
