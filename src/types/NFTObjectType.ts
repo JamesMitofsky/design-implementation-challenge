@@ -11,7 +11,12 @@ export interface NFTStructure {
     certified: boolean;
     avatar: string;
   };
-  offer: null;
+  offer: {
+    offer_id: string;
+    kind: string;
+    side: unknown;
+    unitary_price_float: number;
+  };
   sale: {
     sale_id: string;
     seller: string;
