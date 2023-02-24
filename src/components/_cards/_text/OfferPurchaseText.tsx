@@ -20,7 +20,6 @@ export default function OfferText({
         flexDirection: "column",
         alignItems: "flex-end",
         justifyContent: "flex-end",
-        height: "100%",
       }}
     >
       {hovered && <BuyNowButton />}
