@@ -27,7 +27,7 @@ export default function CardImage({
 
   // primary image height needs to be calculated to give extra space to the topper component
   const typeSpecificHeight =
-    collection.kind === "erc1155" ? "11.3rem" : "12.5rem"; // 12.5rem minus the height of CardTopperGroup
+    collection.kind === "erc1155" ? "13.8rem" : "15rem"; // 12.5rem minus the height of CardTopperGroup, 1.2rem
 
   return (
     <Box

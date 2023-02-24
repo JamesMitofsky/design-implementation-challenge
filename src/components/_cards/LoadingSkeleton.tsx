@@ -18,7 +18,7 @@ export default function LoadingSkeleton() {
           <Skeleton
             animation="wave"
             variant="rectangular"
-            sx={{ minHeight: "12.5rem", bgcolor: "grey.800" }}
+            sx={{ minHeight: "15rem", bgcolor: "grey.800" }}
           />
           <Box
             sx={{

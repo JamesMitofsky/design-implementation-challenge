@@ -1,7 +1,7 @@
 import { returnAllNFTs } from "../../functions/fetchNFTs";
 import { useState, useEffect, useRef } from "react";
 import { NFTStructure } from "../../types/NFTObjectType";
-import Card from "./Card";
+import Card from "./PrimaryCard";
 import { Box } from "@mui/system";
 import CardSkeleton from "./LoadingSkeleton";
 import returnArrayOfOneComponent from "../../functions/returnArrayOfOneComponent";

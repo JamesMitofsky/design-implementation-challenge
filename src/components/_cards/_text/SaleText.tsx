@@ -12,7 +12,7 @@ export default function SaleText({ price }: { price: SalePrice }) {
           <Typography variant="cardSubtitle">Price</Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <PriceIcon marginRequiredOn="right" />
-            <Typography sx={{ fontSize: 10 }}>{price.toFixed(1)}</Typography>
+            <Typography sx={{ fontSize: 13 }}>{price.toFixed(1)}</Typography>
           </Box>
         </>
       )}

@@ -35,7 +35,6 @@ let theme = createTheme({
     allVariants: {
       color: "#ffffff",
       fontFamily: "'Hind Guntur', sans-serif",
-      marginBottom: "-0.3rem",
     },
     h1: {
       fontSize: "2.2rem",
@@ -47,13 +46,15 @@ let theme = createTheme({
       color: "#6e7279",
     },
     cardTitle: {
-      fontSize: ".8rem",
+      fontSize: "1.05rem",
+      lineHeight: "1.3rem",
       fontWeight: 700,
       color: grey[50],
       fontFamily: "'Hind Guntur', sans-serif",
     },
     cardSubtitle: {
-      fontSize: ".7rem",
+      fontSize: ".8rem",
+      lineHeight: "1.1rem",
       color: grey[700],
       fontFamily: "'Hind Guntur', sans-serif",
     },
@@ -80,6 +81,14 @@ let theme = createTheme({
           "&:hover": {
             background: callToActionDark,
           },
+          borderRadius: ".4rem",
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          borderRadius: ".7rem",
         },
       },
     },

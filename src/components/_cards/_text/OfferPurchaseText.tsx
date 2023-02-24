@@ -28,7 +28,7 @@ export default function OfferText({
         <>
           <Typography variant="cardSubtitle">Best Offer</Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <Typography sx={{ fontSize: 10 }}>{price.toFixed(1)}</Typography>
+            <Typography sx={{ fontSize: 13 }}>{price.toFixed(1)}</Typography>
             <PriceIcon bestOffer={true} marginRequiredOn="left" />
           </Box>
         </>

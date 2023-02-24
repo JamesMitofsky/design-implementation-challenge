@@ -38,7 +38,6 @@ export default function CardWrapper({
         sx={{
           width,
           height,
-          borderRadius: ".7rem",
           flex: 1,
           display: "flex",
           flexDirection: "column",

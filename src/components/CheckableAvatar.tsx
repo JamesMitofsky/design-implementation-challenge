@@ -28,13 +28,13 @@ export default function CheckableAvatar({
       }}
       overlap="circular"
       anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-      badgeContent={checked && <img height={18} src={CheckboxImage} />}
+      badgeContent={checked && <img height={15} src={CheckboxImage} />}
     >
       <Badge
         sx={{ backgroundColor: "#e1e2db", borderRadius: "50%" }}
         overlap="circular"
       >
-        <AvatarImage imageURL={imageURL} altText={altText} size={50} />
+        <AvatarImage imageURL={imageURL} altText={altText} size={40} />
       </Badge>
     </Badge>
   );

@@ -12,4 +12,5 @@ body,
   flex-direction: column;
   flex: 1;
   cursor: url("custom-cursor.svg"), auto;
+  border-radius: 0.7rem;
 }

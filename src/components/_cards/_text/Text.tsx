@@ -17,11 +17,12 @@ export default function CardText({
   offer,
   hovered,
 }: Props) {
+  // cards which will have the stacked effect also have a glowing border
   const cardTypeDependantColor =
     collection.kind === "erc1155" ? "#44474d" : "secondary.main";
 
   return (
-    <CardContent
+    <Box
       sx={{
         height: "100%",
         borderWidth: "0 .05rem .05rem .05rem",
@@ -29,6 +30,7 @@ export default function CardText({
         borderBottomLeftRadius: ".7rem",
         borderStyle: "solid",
         borderColor: cardTypeDependantColor,
+        p: 1.8,
         pt: 4.5,
         display: "grid",
         gridTemplateAreas: `"title title"
@@ -42,6 +44,6 @@ export default function CardText({
       <SaleText price={sale?.unitary_price_float} />
 
       <OfferText price={offer?.unitary_price_float} hovered={hovered} />
-    </CardContent>
+    </Box>
   );
 }
