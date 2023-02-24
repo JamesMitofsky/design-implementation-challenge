@@ -1,10 +1,12 @@
 import { Card, Box } from "@mui/material";
 import LayeredCardEffect from "./CardTopperGroup";
+import returnArrayOfOneComponent from "../../functions/returnArrayOfOneComponent";
 
 interface Props {
+  children: React.ReactNode;
+  toggleHover?: () => void;
   kind?: "erc721" | "erc1155";
   primaryHueValue?: number;
-  children: React.ReactNode;
   height?: number;
   width?: number;
 }
@@ -13,16 +15,20 @@ export default function CardWrapper({
   children,
   height,
   width,
+  toggleHover,
   primaryHueValue,
   kind,
 }: Props) {
   return (
     <Box
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
       sx={{
         width: "13rem",
         height: "22.75rem",
         display: "flex",
         flexDirection: "column",
+        position: "relative",
       }}
     >
       {kind === "erc1155" && (

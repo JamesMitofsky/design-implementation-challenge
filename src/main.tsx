@@ -26,11 +26,16 @@ declare module "@mui/material/Typography" {
   }
 }
 
+const primaryDark = "#18191d";
+const callToAction = "#3b39e8";
+const callToActionDark = "#2a2a9e";
+
 let theme = createTheme({
   typography: {
     allVariants: {
       color: "#ffffff",
       fontFamily: "'Hind Guntur', sans-serif",
+      marginBottom: "-0.3rem",
     },
     h1: {
       fontSize: "2.2rem",
@@ -55,7 +60,7 @@ let theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#18191d",
+      main: primaryDark,
       light: "hsl(0deg 0% 14% / 61%)",
     },
     secondary: {
@@ -63,8 +68,20 @@ let theme = createTheme({
       light: grey[800],
     },
     background: {
-      default: "#18191d",
-      paper: "#18191d",
+      default: primaryDark,
+      paper: primaryDark,
+    },
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          backgroundColor: callToAction,
+          "&:hover": {
+            background: callToActionDark,
+          },
+        },
+      },
     },
   },
 });
