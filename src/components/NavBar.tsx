@@ -16,6 +16,7 @@ export default function NavBar() {
         borderBottom: 1,
         borderTop: 1,
         borderColor: "secondary.main",
+        height: 85,
       }}
     >
       <Toolbar>

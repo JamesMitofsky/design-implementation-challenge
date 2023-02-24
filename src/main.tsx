@@ -37,7 +37,7 @@ let theme = createTheme({
       fontFamily: "'Hind Guntur', sans-serif",
     },
     h1: {
-      fontSize: "2.2rem",
+      fontSize: "2.8rem",
       fontWeight: 700,
     },
     subtitle1: {

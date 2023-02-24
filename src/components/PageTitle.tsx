@@ -16,6 +16,7 @@ export default function PageTitle({ title, subtitle }: Props) {
         textAlign: "center",
         gap: 2,
         p: 4,
+        py: 7,
         borderBottom: 1,
         borderColor: grey[900],
       }}
