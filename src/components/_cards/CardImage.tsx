@@ -41,7 +41,6 @@ export default function CardImage({
       <CheckableAvatar
         imageURL={collection.avatar}
         checked={collection.certified}
-        size={50}
       />
     </Box>
   );

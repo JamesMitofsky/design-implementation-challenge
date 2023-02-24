@@ -4,22 +4,17 @@ interface Props {
   imageURL: string;
   size: number;
   altText?: string;
-  checked?: boolean;
 }
 
-export default function AvatarImage({
-  imageURL,
-  altText,
-  size,
-  checked,
-}: Props) {
+export default function AvatarImage({ imageURL, altText, size }: Props) {
   return (
     <Avatar
       alt={altText}
       src={imageURL}
+      sizes={"small"}
       sx={{
-        height: { size },
-        width: { size },
+        height: size,
+        width: size,
       }}
     />
   );

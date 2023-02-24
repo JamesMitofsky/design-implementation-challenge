@@ -24,11 +24,11 @@ export default function CardWrapper({
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
       sx={{
-        width: "13rem",
+        width: "13.3rem",
         height: "22.75rem",
         display: "flex",
         flexDirection: "column",
-        position: "relative",
+        mb: 2,
       }}
     >
       {kind === "erc1155" && (

@@ -4,17 +4,11 @@ import AvatarImage from "./AvatarImage";
 
 interface Props {
   imageURL: string;
-  size: number;
   altText?: string;
   checked?: boolean;
 }
 
-export default function CheckableAvatar({
-  imageURL,
-  size,
-  altText,
-  checked,
-}: Props) {
+export default function CheckableAvatar({ imageURL, altText, checked }: Props) {
   return (
     <Badge
       sx={{
@@ -24,7 +18,7 @@ export default function CheckableAvatar({
         backgroundColor: "primary.main",
         borderRadius: "50%",
         ml: 1.6,
-        p: 0.5,
+        p: 0.35,
       }}
       overlap="circular"
       anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
@@ -34,7 +28,7 @@ export default function CheckableAvatar({
         sx={{ backgroundColor: "#e1e2db", borderRadius: "50%" }}
         overlap="circular"
       >
-        <AvatarImage imageURL={imageURL} altText={altText} size={40} />
+        <AvatarImage imageURL={imageURL} altText={altText} size={38} />
       </Badge>
     </Badge>
   );

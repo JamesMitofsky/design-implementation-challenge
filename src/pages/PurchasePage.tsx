@@ -6,7 +6,7 @@ export default function PurchasePage() {
     <>
       <PageTitle
         title="Explore"
-        subtitle="Explore more than 100k of amazing NFT's on the marketplace
+        subtitle="Explore more than 100k of amazing NFTs on the marketplace
 and filter them at your convenience."
       />
 

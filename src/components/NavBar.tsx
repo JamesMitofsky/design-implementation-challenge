@@ -17,13 +17,15 @@ export default function NavBar() {
         borderTop: 1,
         borderColor: "secondary.main",
         height: 85,
+        display: "flex",
+        justifyContent: "center",
       }}
     >
       <Toolbar>
         <Box sx={{ flexGrow: 1 }}>
-          <Image src={Logo} alt="logo" width={20} duration={100} />
+          <AvatarImage imageURL={Logo} size={30} />
         </Box>
-        <AvatarImage imageURL={UserImage} size={30} />
+        <AvatarImage imageURL={UserImage} size={40} />
       </Toolbar>
     </AppBar>
   );

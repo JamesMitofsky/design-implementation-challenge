@@ -24,7 +24,9 @@ export default function PageTitle({ title, subtitle }: Props) {
       <Typography variant="h1" sx={{ mb: 2 }}>
         {title}
       </Typography>
-      <Typography variant="subtitle1">{subtitle}</Typography>
+      <Typography variant="subtitle1" sx={{ maxWidth: 400 }}>
+        {subtitle}
+      </Typography>
     </Box>
   );
 }
