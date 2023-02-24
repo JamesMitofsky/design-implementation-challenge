@@ -2,18 +2,24 @@ import { Avatar } from "@mui/material";
 
 interface Props {
   imageURL: string;
+  size: number;
   altText?: string;
   checked?: boolean;
 }
 
-export default function AvatarImage({ imageURL, altText, checked }: Props) {
+export default function AvatarImage({
+  imageURL,
+  altText,
+  size,
+  checked,
+}: Props) {
   return (
     <Avatar
       alt={altText}
       src={imageURL}
       sx={{
-        height: 30,
-        width: "auto",
+        height: { size },
+        width: { size },
       }}
     />
   );

@@ -3,6 +3,7 @@ import { NFTStructure } from "../../types/NFTObjectType";
 import { Box } from "@mui/material";
 import createLinearGradiant from "../../functions/createLinearGradiant";
 import { useEffect, useState } from "react";
+import CheckableAvatar from "../CheckableAvatar";
 
 interface Props extends Pick<NFTStructure, "thumbnail" | "collection"> {
   alt: string;
@@ -37,6 +38,11 @@ export default function CardImage({
       }}
     >
       <Image src={thumbnail} alt={alt} height="inherit" duration={100} />
+      <CheckableAvatar
+        imageURL={collection.avatar}
+        checked={collection.certified}
+        size={50}
+      />
     </Box>
   );
 }
