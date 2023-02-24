@@ -31,7 +31,7 @@ export default function CardText({
         borderStyle: "solid",
         borderColor: cardTypeDependantColor,
         p: 1.8,
-        pt: 4.5,
+        pt: 4.2,
         display: "grid",
         gridTemplateAreas: `"title title"
                               "price bestOffer"`,

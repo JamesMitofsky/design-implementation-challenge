@@ -3,8 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import "@fontsource/hind-guntur";
+import "@fontsource/roboto";
 import { grey } from "@mui/material/colors";
+import CursorImage from "./assets/custom-cursor.svg";
 declare module "@mui/material/styles" {
   interface TypographyVariants {
     cardTitle: React.CSSProperties;
@@ -34,11 +35,11 @@ let theme = createTheme({
   typography: {
     allVariants: {
       color: "#ffffff",
-      fontFamily: "'Hind Guntur', sans-serif",
+      fontFamily: "'Roboto', sans-serif",
     },
     h1: {
       fontSize: "2.8rem",
-      fontWeight: 700,
+      fontWeight: 500,
     },
     subtitle1: {
       fontSize: ".8rem",
@@ -48,12 +49,12 @@ let theme = createTheme({
     cardTitle: {
       fontSize: "1.05rem",
       lineHeight: "1.3rem",
-      fontWeight: 700,
+      fontWeight: 500,
       color: grey[50],
       fontFamily: "'Hind Guntur', sans-serif",
     },
     cardSubtitle: {
-      fontSize: ".8rem",
+      fontSize: ".7rem",
       lineHeight: "1.1rem",
       color: grey[700],
       fontFamily: "'Hind Guntur', sans-serif",
@@ -80,6 +81,7 @@ let theme = createTheme({
           backgroundColor: callToAction,
           "&:hover": {
             background: callToActionDark,
+            cursor: `url(${CursorImage}), auto;`,
           },
           borderRadius: ".4rem",
         },
